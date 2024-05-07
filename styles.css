@@ -126,11 +126,17 @@ img {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-.welcome-section > p {
+.welcome-note > p {
   font-size: 3rem;
   font-weight: 200;
-  font-style: italic;
+  /*font-style: italic;*/
   color: var(--green);
+  text-align: center;
+}
+
+.welcome-note {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .projects-section {
