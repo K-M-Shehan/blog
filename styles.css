@@ -81,12 +81,13 @@ img {
 .nav {
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  /*position: fixed;*/ /*new*/
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--green);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  /*background: var(--green);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);*/
+  background: rgba(15, 21, 37, .8); /*new*/
   z-index: 10;
 }
 
@@ -121,10 +122,23 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  height: 70vh; /*was 100*/
+  /*background-color: #000;*/
+  background: rgba(15, 21, 37, .8); /*new*/
+  /*background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);*/
 }
+
+/*new block*/
+video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+/*new block end*/
 
 .welcome-note > p {
   font-size: 3rem;
