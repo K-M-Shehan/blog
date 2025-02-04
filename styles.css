@@ -135,3 +135,13 @@ main {
     width: 250px; /* Set image size */
     border-radius: 10px; /* Optional rounded corners */
 }
+
+.contact-links a {
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  color: gray;
+}
