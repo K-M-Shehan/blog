@@ -147,17 +147,23 @@ main {
 }
 
 /* obviously i did not write these media queries, gpt did. why? cause i'm lazy*/
+/*ps: i shouldn't have been lazy, this looks like shit*/
 
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
   .wrapper {
-    height: auto;
+    height: auto; /* Allow content to dictate height */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .grid-container {
-    grid-template-columns: 1fr; /* Stack items vertically */
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
   }
 
   .grid-items {
@@ -170,25 +176,27 @@ main {
     width: 150px; /* Reduce image size */
   }
 
-  .project-box {
-    flex-direction: column; /* Stack text and image */
+  /* Fix "About Me" text overflowing */
+  .about-me-div {
+    max-width: 90%;
+    height: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 20px;
+  }
+
+  /* Fix footer centering */
+  footer {
     text-align: center;
-  }
-
-  .text-side {
-    padding-right: 0;
-    padding-bottom: 10px;
-  }
-
-  .image-side img {
-    width: 80%; /* Adjust image size */
+    width: 100%;
+    position: relative; /* Remove fixed positioning */
   }
 }
 
 /* Tablets (max-width: 900px) */
 @media (max-width: 900px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr; /* Stack items vertically */
   }
 
   .grid-items {
@@ -197,22 +205,6 @@ main {
 
   .nav {
     font-size: 18px; /* Slightly smaller text */
-  }
-
-  .project-box {
-    max-width: 100%;
-    padding: 15px;
-  }
-}
-
-/* Large screens (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .grid-container {
-    max-width: 60%; /* Limit width for readability */
-  }
-
-  .project-box {
-    max-width: 800px;
   }
 }
 
