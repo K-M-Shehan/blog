@@ -145,3 +145,74 @@ main {
   text-decoration: underline;
   color: gray;
 }
+
+/* obviously i did not write these media queries, gpt did. why? cause i'm lazy*/
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .wrapper {
+    height: auto;
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    max-width: 100%;
+  }
+
+  .grid-items {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  img {
+    width: 150px; /* Reduce image size */
+  }
+
+  .project-box {
+    flex-direction: column; /* Stack text and image */
+    text-align: center;
+  }
+
+  .text-side {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .image-side img {
+    width: 80%; /* Adjust image size */
+  }
+}
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .grid-items {
+    height: auto;
+  }
+
+  .nav {
+    font-size: 18px; /* Slightly smaller text */
+  }
+
+  .project-box {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .grid-container {
+    max-width: 60%; /* Limit width for readability */
+  }
+
+  .project-box {
+    max-width: 800px;
+  }
+}
+
