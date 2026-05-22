@@ -131,9 +131,9 @@ main {
     padding-right: 20px; /* Adds space between text and image */
 }
 
-.image-side img {
-    width: 250px; /* Set image size */
-    border-radius: 10px; /* Optional rounded corners */
+.img-side img {
+  width: 250px;
+  border-radius: 8px;
 }
 
 .contact-links a {
