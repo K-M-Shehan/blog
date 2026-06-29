@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>api-tickler</title>
+		<link href="../../styles.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../../projects.css" rel="stylesheet" type="text/css" media="all">
+		<meta name="author" content="supremestrawhat">
+		<link rel="icon" href="../../images/pro-pic.png">
+	</head>
+	<body>
+		<main>
+			<div class="project-hero">
+				<div class="project-hero-copy">
+					<p class="project-eyebrow">Compiler Design Project</p>
+					<h2>api-tickler</h2>
+					<p>
+						api-tickler is a custom domain-specific language (DSL) for HTTP API testing that
+						transforms concise <code>.test</code> specifications into executable JUnit 5 integration
+						tests for Spring Boot applications.
+					</p>
+					<div class="project-actions">
+						<a href="https://github.com/K-M-Shehan/api-tickler" class="project-button" target="_blank" rel="noopener noreferrer">Source code</a>
+						<a href="../projects.html" class="project-button project-button-secondary">Back to projects</a>
+					</div>
+				</div>
+
+				<div class="project-hero-aside">
+					<div class="project-meta-card">
+						<h3>Quick facts</h3>
+						<p><strong>Role:</strong> Solo Developer</p>
+						<p><strong>Stack:</strong> C, Flex, Bison, Java, Spring Boot</p>
+						<p><strong>Focus:</strong> Compiler Design & Code Generation</p>
+						<p><strong>Output:</strong> Automatic JUnit 5 test generation</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Domain-specific language for HTTP API testing</h3>
+					<p>
+						api-tickler is a custom DSL that simplifies HTTP API testing by allowing developers
+						to write concise, human-readable test specifications instead of repetitive Java test
+						code. The parser automatically converts these specifications into executable JUnit 5
+						integration tests that communicate with Spring Boot applications using Java HttpClient.
+					</p>
+					<p>
+						The project demonstrates how compiler techniques can be applied to improve developer
+						productivity by replacing boilerplate code with a specialized language tailored to API
+						testing.
+					</p>
+				</div>
+			</div>
+
+			<a href="../../images/projects/api-tickler.png" class="div-links" target="_blank" rel="noopener noreferrer">
+				<div class="project-box project-media-box">
+					<img src="../../images/projects/api-tickler.png" alt="api-tickler project preview" class="project-image project-detail-image">
+				</div>
+			</a>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Problem addressed</h3>
+					<p>
+						Writing integration tests for REST APIs often involves repetitive setup,
+						request construction, response validation, and boilerplate code that obscures
+						the actual intent of a test.
+					</p>
+					<p>
+						api-tickler replaces that repetitive workflow with a purpose-built language
+						that lets developers express test cases declaratively while automatically
+						generating production-ready Java test code.
+					</p>
+				</div>
+			</div>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Compiler design</h3>
+					<p>
+						The language was implemented entirely in C using Flex for lexical analysis and
+						Bison for parsing. The compiler performs tokenization, recursive parsing,
+						syntax validation, semantic checks, and Java source code generation from
+						<code>.test</code> files.
+					</p>
+					<p>
+						The implementation also includes descriptive error reporting to help users
+						identify invalid syntax and malformed test definitions quickly.
+					</p>
+				</div>
+			</div>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Language features</h3>
+					<p>
+						The DSL supports variable declarations, reusable string values, inline variable
+						interpolation, HTTP request definitions, and an extensible grammar that can be
+						expanded with additional testing constructs in the future.
+					</p>
+					<p>
+						These features enable developers to write expressive API tests while keeping
+						test specifications concise and easy to maintain.
+					</p>
+				</div>
+			</div>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Technology integration</h3>
+					<p>
+						Generated source files target JUnit 5 and execute HTTP requests through Java
+						HttpClient against a Spring Boot backend, allowing the DSL to fit naturally
+						into existing Java development workflows without requiring custom runtime
+						components.
+					</p>
+					<p>
+						This approach combines the simplicity of a domain-specific language with the
+						reliability of established testing frameworks and integration tooling.
+					</p>
+				</div>
+			</div>
+
+			<div class="project-box">
+				<div class="text-side">
+					<h3>Outcome</h3>
+					<p>
+						api-tickler demonstrates practical compiler construction beyond academic parsing
+						exercises by producing useful, executable artifacts. It highlights how custom
+						languages can reduce repetitive development tasks while remaining fully compatible
+						with modern software engineering practices.
+					</p>
+					<p>
+						The project showcases lexer and parser construction, grammar design, code
+						generation, and seamless integration with Java-based backend testing.
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<br>
+
+		<footer>
+			<p>
+				<a href="../../index.html" id="footer-nav">Home</a> |
+				<a href="../about-me.html" id="footer-nav">About me</a> |
+				<a href="https://medium.com/@supremestrawhat" id="footer-nav">Blog</a> |
+				<a href="../contact.html" id="footer-nav">Contact</a> |
+				<a href="../projects.html" id="footer-nav">Back</a>
+			</p>
+		</footer>
+	</body>
+</html>

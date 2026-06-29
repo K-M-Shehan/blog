@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncPay</title>
+    <link href="../../styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../projects.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="author" content="supremestrawhat">
+    <link rel="icon" href="../../images/pro-pic.png">
+  </head>
+  <body>
+    <main>
+      <div class="project-hero">
+        <div class="project-hero-copy">
+          <p class="project-eyebrow">Distributed Systems Project</p>
+          <h2>SyncPay</h2>
+          <p>
+            SyncPay is a distributed payment processing system built with Python and Flask to explore how reliable,
+            fault-tolerant financial workflows can be designed across multiple nodes.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/K-M-Shehan/syncpay" class="project-button">Codebase</a>
+            <a href="../projects.html" class="project-button project-button-secondary">Back to projects</a>
+          </div>
+        </div>
+        <div class="project-hero-aside">
+          <div class="project-meta-card">
+            <h3>Quick facts</h3>
+            <p><strong>Role:</strong> Project Lead</p>
+            <p><strong>Team:</strong> 3 contributors</p>
+            <p><strong>Stack:</strong> Python, Flask, Pytest</p>
+            <p><strong>Core:</strong> Raft, replication, monitoring</p>
+            <p><strong>Focus:</strong> Correctness and fault tolerance</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Project overview</h3>
+          <p>
+            I led a team of three on SyncPay and guided the technical direction, system architecture, and implementation of the
+            core distributed components. The platform was designed to maintain transaction consistency, prevent duplicate
+            processing, and remain resilient under node failures while still being observable and testable.
+          </p>
+          <p>
+            The project was meant to demonstrate how distributed backend systems can preserve correctness while still behaving like
+            a practical payment service.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box project-media-box">
+        <img src="../../images/projects/syncpay.png" alt="SyncPay project preview" class="project-image project-detail-image">
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Architecture</h3>
+          <p>
+            SyncPay uses a leader-based cluster architecture built around Raft consensus for leader election and coordination.
+            Only the elected leader accepts payment requests, which centralizes transaction handling and helps avoid conflicting writes.
+          </p>
+          <p>
+            Transaction state is replicated to follower nodes using a primary-backup replication model. Time synchronization,
+            health monitoring, and failover logic were added to improve cluster resilience when nodes become unhealthy or unavailable.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>My role</h3>
+          <p>
+            As project lead, I coordinated the team, defined the system architecture, broke down implementation tasks, and guided
+            integration across consensus, replication, and monitoring components.
+          </p>
+          <p>
+            I also helped shape the testing strategy and made sure the system behaved correctly across normal operation,
+            replication scenarios, and failure cases.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Key features</h3>
+          <p>
+            The system supports leader-based payment processing, cluster-wide transaction replication, deduplication to prevent
+            duplicate payments, input validation for payment rules, health monitoring for node status, failover handling for
+            resilience, and metrics for observability under load.
+          </p>
+          <p>
+            I also implemented transaction deduplication, request validation, and metrics collection to strengthen correctness,
+            visibility, and operational control.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Challenges</h3>
+          <p>
+            The main challenges were ensuring consistency across nodes, preventing duplicate transaction processing, handling
+            leader-only request routing, and maintaining system correctness during failures.
+          </p>
+          <p>
+            Designing the system so that it remained testable and observable was equally important, especially because the project
+            was intended to demonstrate real distributed systems concepts in a practical backend application.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Testing and validation</h3>
+          <p>
+            A comprehensive test suite covers unit, integration, and end-to-end behavior using Pytest. The testing approach was
+            built to verify not just happy-path payments, but also replication behavior and failure cases.
+          </p>
+          <p>
+            That made it easier to validate the system as a whole and confirm that the distributed workflows stayed correct under
+            realistic conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Outcome</h3>
+          <p>
+            The final result was a production-oriented distributed payment platform that demonstrates core backend and distributed
+            systems principles, including consensus, replication, fault tolerance, and observability.
+          </p>
+          <p>
+            SyncPay shows my ability to lead a technical project, design a reliable multi-node architecture, and deliver a system
+            with strong correctness and resilience properties.
+          </p>
+        </div>
+      </div>
+    </main>
+    <br>
+    <footer>
+        <p>
+            <a href="../../index.html" id="footer-nav">Home</a> | 
+            <a href="../about-me.html" id="footer-nav">About me</a> | 
+        <a href="https://medium.com/@supremestrawhat" id="footer-nav">Blog</a> | 
+            <a href="../contact.html" id="footer-nav">Contact</a> |
+            <a href="../projects.html" id="footer-nav">Back</a>
+        </p>
+    </footer>
+  </body>
+</html>
