@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Fati</title>
+    <link href="../../styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../projects.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="author" content="supremestrawhat">
+    <link rel="icon" href="../../images/pro-pic.png">
+  </head>
+  <body>
+    <main>
+      <div class="project-hero">
+        <div class="project-hero-copy">
+          <p class="project-eyebrow">Graphics & Visualization + Intelligent Systems</p>
+          <h2>Amor Fati</h2>
+          <p>
+            Amor Fati is a 3D survival and escape game developed in Godot 4 as a third-year project focused on
+            technical AI systems, structured game architecture, and atmospheric narrative design.
+          </p>
+          <div class="project-actions">
+			<a href="https://github.com/K-M-Shehan/amor-fati" class="project-button" target="_blank" rel="noopener noreferrer">Codebase</a>
+			<a href="https://github.com/K-M-Shehan/amor-fati/releases" class="project-button project-button-secondary" target="_blank" rel="noopener noreferrer">Releases</a>
+            <a href="../projects.html" class="project-button">Back to projects</a>
+          </div>
+        </div>
+        <div class="project-hero-aside">
+          <div class="project-meta-card">
+            <h3>Quick facts</h3>
+            <p><strong>Role:</strong> Writer, Director, Team Lead, Project Manager</p>
+            <p><strong>Team:</strong> 4-person group</p>
+            <p><strong>Engine:</strong> Godot 4</p>
+            <p><strong>Focus:</strong> AI navigation, survival gameplay, level flow</p>
+            <p><strong>Assets:</strong> Blender-based 3D modeling</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Project overview</h3>
+          <p>
+            Amor Fati was developed as part of a third-year Graphics & Visualization and Intelligent Systems project.
+            I led a four-person team through the full production process while also serving as the game’s writer and director,
+            owning the narrative structure, gameplay direction, and overall creative vision.
+          </p>
+          <p>
+            My role bridged design leadership and technical implementation, keeping the experience cohesive from story concept
+            through to playable systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box project-media-box">
+        <img src="../../images/projects/amor-fati.jpg" alt="Amor Fati project preview" class="project-image project-detail-image">
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Game architecture</h3>
+          <p>
+            The project was built around a modular, scene-based architecture in Godot, with separate systems for the player,
+            enemies, level flow, navigation, audio, and saving.
+          </p>
+          <p>
+            That separation made the game easier to extend and helped keep the logic manageable as the survival loop and enemy
+            behaviors became more complex.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Enemy AI and navigation</h3>
+          <p>
+            A graph-based waypoint system formed the backbone of enemy navigation. Level waypoints were scanned and converted
+            into path nodes containing position data, terrain type, movement cost, and blocked-state information.
+          </p>
+          <p>
+            I implemented custom pathfinding using A* as the primary routing system, with BFS as a secondary search method where
+            needed. Enemy behavior was driven by activation zones, line-of-sight checks, and path recalculation so enemies could
+            switch between direct pursuit and graph-guided movement depending on the environment.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Gameplay systems</h3>
+          <p>
+            On the gameplay side, I worked on player movement, interaction handling, terrain-sensitive movement speeds,
+            footstep audio variation, and level progression logic.
+          </p>
+          <p>
+            The player controller includes camera look, movement, gravity, jump handling, and raycast-based interaction with
+            world objects. Supporting systems such as save management, sound triggers, and lighting helped tie the experience
+            together into a polished survival loop.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Production and teamwork</h3>
+          <p>
+            The team worked across the full production pipeline, with Blender supporting the 3D assets and Godot handling scene
+            composition, gameplay scripting, and runtime interaction. The project also supported progressive difficulty, so enemy
+            pressure became more effective as the player moved through later levels.
+          </p>
+          <p>
+            We completed the work over 4 sprints, keeping narrative, mechanics, and implementation aligned throughout the process.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="text-side">
+          <h3>Outcome</h3>
+          <p>
+            Overall, Amor Fati combines technical AI systems, structured game architecture, and narrative design into a cohesive
+            survival experience built for both gameplay clarity and atmospheric presentation.
+          </p>
+          <p>
+            It was a strong example of how design direction and systems engineering can reinforce each other in a game project.
+          </p>
+        </div>
+      </div>
+    </main>
+    <br>
+    <footer>
+        <p>
+            <a href="../../index.html" id="footer-nav">Home</a> | 
+            <a href="../about-me.html" id="footer-nav">About me</a> | 
+        <a href="https://medium.com/@supremestrawhat" id="footer-nav">Blog</a> | 
+            <a href="../contact.html" id="footer-nav">Contact</a> |
+            <a href="../projects.html" id="footer-nav">Back</a>
+        </p>
+    </footer>
+  </body>
+</html>
